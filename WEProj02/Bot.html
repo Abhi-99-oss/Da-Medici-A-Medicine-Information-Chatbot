@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ask/Da-Medici</title>
+  <link rel="stylesheet" href="bot.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+
+  <img src="damedici.jpg" alt="Logo" class="logo" />
+
+  <nav class="navbar" style="background-color: white; padding: 10px 0; text-align: center; margin-bottom: 20px;">
+    <h2 style="color:black;">Da-Medici</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li style="display: inline-block; margin: 0 10px;">
+        <a href="Home.html" style="color: black; text-decoration: none; padding: 5px 10px; border-radius: 5px;">Home</a>
+      </li>
+      <li style="display: inline-block; margin: 0 10px;">
+        <a href="About.html" style="color: black; text-decoration: none; padding: 5px 10px; border-radius: 5px;">About</a>
+      </li>
+      <li style="display: inline-block; margin: 0 10px;">
+        <a href="Bot.html" style="color: black; text-decoration: none; padding: 5px 10px; border-radius: 5px;">Ask</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="logout">
+    <button id="logoutButton" onclick="window.location.href='log_in.html';">Logout</button>
+  </div>
+
+  <div class="backGo">
+    <button id="backButton" onclick="window.location.href='Home.html';">Back</button>
+  </div>
+
+  <div class="container">
+    <div class="cards">
+      <div class="card-header">
+        <h2 style="text-align: center;">Da-Medici</h2>
+      </div>
+      <div class="card-body">
+        <!-- Chat messages will be dynamically added here -->
+      </div>
+      <div class="card-footer">
+        <textarea
+          name="message"
+          class="input-chat"
+          id=""
+          cols="10"
+          rows="1"
+          placeholder="Enter Medicine name...."
+          style="color:white;"
+        ></textarea>
+        <div class="sending-icon">
+          <i class="fa-regular fa-paper-plane"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-container">
+    <div class="dark-container">
+      <p>Email: ui21cs02@iiitsurat.ac.in</p>
+      <p>Address: Indian Institute of Information Technology Surat, India.</p>
+      <p>Phone: +9134567890</p>
+      <p>All rights reserved &copy; 2024</p>
+    </div>
+  </div>
+
+  <script defer src="bot.js"></script>
+</body>
+</html>

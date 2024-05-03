@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="sign_in_css.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h2>Sign In</h2>
+        <form action="save_to_excel.php" method="post"> <!-- Change "save_to_excel.php" to the actual destination page -->
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <button type="submit">Sign In</button>
+          <button type="button" id="loginButton">Log in</button> <!-- Used type="button" to prevent form submission -->
+        </form>
+    </div>
+
+<script>
+    document.getElementById('loginButton').addEventListener('click', function() {
+        window.location.href = 'log_in.html';
+    });
+</script>
+</body>
+</html>

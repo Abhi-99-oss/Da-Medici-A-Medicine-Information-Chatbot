@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Da-Medici</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0; /* Change this to your preferred background color */
+    }
+
+    .loading-container {
+      text-align: center;
+    }
+
+    .loading-container img {
+      width: 100px; /* Adjust size as needed */
+      height: 100px;
+      animation: spin 2s linear infinite; /* Apply the spin animation */
+    }
+
+    .loading-container p {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="loading-container">
+    <img src="bot_icon.png" alt="Loading Icon">
+  </div>
+
+  <script>
+    // Wait for 5 seconds and then redirect to sign_in.html
+    setTimeout(function() {
+      window.location.href = 'sign_in.html';
+    }, 5000); // 5000 milliseconds = 5 seconds
+  </script>
+</body>
+</html>

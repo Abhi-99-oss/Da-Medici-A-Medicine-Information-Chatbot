@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  background-color: black;
+}
+
+.logo {
+  position:absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  width: 100px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.navbar ul li a:hover {
+  background-color: #336ea9; /* Dark color on hover */
+}
+
+.dot-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: lightblue;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: sprinkle 5s infinite;
+}
+
+@keyframes sprinkle {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-100vh);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-200vh);
+  }
+}
+
+.dot:nth-child(1) {
+  left: 10%;
+  top: 20%;
+  animation-delay: 1s;
+}
+
+.dot:nth-child(2) {
+  left: 40%;
+  top: 30%;
+  animation-delay: 2s;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  background-color: #17202a;
+  border:2px solid white;
+  border-radius: 10px;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.card-header {
+  background-color: #212f3d;
+  border: 2px solid white;
+  border-radius: 10px 10px 0 0;
+  padding: 1rem;
+  color: #fff;
+  align-items: center;
+}
+
+.card-body {
+  padding: 0.8rem;
+  font-size: 1rem;
+  height: 400px;
+  overflow-y: auto;
+}
+
+.card-body .chat-bot p,
+.card-body .user p {
+  background-color: #3498db;
+  border-radius: 10px;
+  padding: 0.8rem;
+  width: fit-content;
+  max-width: 70%;
+  white-space: pre-wrap;
+}
+
+.card-footer .input-chat {
+  resize: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  width: 100%;
+  display: flex;
+  padding: 1.5rem;
+  background-color: #212f3d;
+  border: 2px solid white;
+  border-radius: 0px;
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.card-footer .input-chat::placeholder {
+  color: rgb(156, 154, 154); 
+}
+
+.chat-bot,
+.user {
+  margin: 1rem 0;
+}
+
+.chat .user-icon {
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  margin-right: 0.5rem;
+  border: 2px solid #212f3d;
+}
+
+.user-icon .fa-robot {
+  color: #3498db;
+}
+
+.user-icon .fa-user {
+  color: #28b463;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+  /* border: 2px solid white; */
+}
+
+.card-footer textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  width: 100%;
+  display: flex;
+  padding: 1.5rem;
+  background-color: #212f3d;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.sending-icon {
+  position: absolute;
+  right: 30px;
+  border: 2px solid white;
+  padding: 7px;
+}
+
+.sending-icon .fa-paper-plane {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logout {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#logoutButton {
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#logoutButton:hover {
+  background-color: darkred;
+}
+
+.backGo {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+#backButton {
+  background-color: #28b463;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#backButton:hover {
+  background-color: darkgreen;
+}
+
+/* Bottom container styles */
+.bottom-container {
+  background-color: #333; /* Dark background color */
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Dark container styles */
+.dark-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dark-container p {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.dark-container p:last-child {
+  margin-bottom: 0;
+}
