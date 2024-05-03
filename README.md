@@ -1,7 +1,7 @@
 # Da-Medici-A-Medicine-Information-Chatbot
 Course: Web Engineering
 Project_Name: Da-Medici
-By: Abhidnya Tambe [UI21CS02]
+
 
 Da-Medici
 
